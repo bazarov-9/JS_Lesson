@@ -183,12 +183,11 @@
 // let natija = age>10 ? "Shart rost" : "Shart yolg'on";
 // console.log(natija);
 
-let data=prompt("Havo haroratini kiriting");
+// let data=prompt("Havo haroratini kiriting");
 
-if(0<data<10){
-    alert(`Siz kiritgan son ${data} toq son`)
-}else{
-    alert(`Siz kiritgan son ${data} juft son`)
-}
-
+// if(0<data<10){
+//     alert(`Siz kiritgan son ${data} toq son`)
+// }else{
+//     alert(`Siz kiritgan son ${data} juft son`)
+// }
 
