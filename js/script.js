@@ -191,3 +191,4 @@ if(0<data<10){
     alert(`Siz kiritgan son ${data} juft son`)
 }
 
+
