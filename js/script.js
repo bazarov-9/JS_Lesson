@@ -191,3 +191,8 @@
 //     alert(`Siz kiritgan son ${data} juft son`)
 // }
 
+"use strict";
+let hasDriverLicense = true; // To'g'ri yozilgan
+let hasGoodVision = false;
+
+if (hasDriverLicense) 
