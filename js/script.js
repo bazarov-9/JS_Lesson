@@ -196,3 +196,104 @@
 // let hasGoodVision = false;
 
 // if (hasDriverLicense) 
+
+// 7-noyabr 2024-yil
+
+// let num = 123;
+// let bool = true;
+// let str = String(num); 
+// console.log(str, typeof str);
+// console.log(String(bool));
+// let a=String(12n);
+// console.log(typeof a);
+
+//toString()
+// let num = 456;
+// let bool = false;
+// let undef=null;
+// console.log(typeof num.toString()); 
+// console.log(typeof bool.toString()); 
+// console.log(typeof undef.toString()); 
+
+//tamplelate literals
+// let num = undefined;
+// let bool = true;
+
+// let result = `${num}`;  
+// console.log(typeof  result);
+
+// let boolString = `${bool}`;
+// console.log(typeof  boolString);
+
+// Number()
+
+// let str = "123";
+// let bool = false;
+// let invalidStr = "abc";
+
+// console.log(Number(str)); // 123
+// console.log(Number(bool)); // 1
+// console.log(Number(invalidStr));
+
+//parseInt() va parseFloat()
+
+// let strInt = +"123.4556554sdapdnahsdv";
+// let strFloat = "";
+
+// console.log(typeof  NaN);
+// console.log(typeof strInt);
+
+// let str = "456";
+// let bool = false;
+// let invalidStr = "xyz";
+
+// console.log(typeof +str); // 456
+// console.log(typeof +bool); // 0
+// console.log(typeof +invalidStr);
+
+// Math.floor(), Math.ceil(), va Math.round()
+
+// let str = "789.4";
+// let bool = "asdasdas";
+
+// console.log(Math.floor(str)); // 789
+// console.log(Math.ceil(str)); // 790
+// console.log(Math.round(str)); // 790
+// console.log(Math.floor(bool));
+
+// console.log(+null); // 0
+// console.log(Number(undefined)); 
+
+// let str = "123.45";
+// console.log(~~str); // 123
+// console.log(~~true); // 1
+// console.log(~~false); // 0
+// console.log("123" - 1);    // 123
+// console.log("45.67" * 1);  // 45.67
+// console.log(true * 1);     // 1
+// console.log(false * 1);    // 0
+// console.log("hello" * 1); 
+
+// null 
+
+// let value = "hello";
+// value = null;
+// console.log(value);  // null
+
+// let value = "";
+// let result = value || null;
+// console.log(typeof  result);  
+
+// value = "world";
+// result = value || null;
+// console.log(typeof  result);  
+//type coercion
+// let num = 5;
+// let str = "10";
+// let result = num + str; 
+// console.log(result, typeof result); 
+// console.log("5.1" === "5.11");
+// console.log((true+true)/2);
+
+// console.log(1**"a");
+// console.log(undefined+[1,2,3]);
