@@ -297,6 +297,89 @@
 
 // console.log(1**"a");
 // console.log(undefined+[1,2,3]);
+// x=15;
+// const role = prompt("Enter your role");
+// const password = prompt("Enter your password");
+// let result = false;
+// let name1;
+// function auth(role, password) {
+//     let map;
+//     if (role == 'user' && password == '12345') {
+//         result = true;
+//         map="../user.html";
+//         name1="user";
+//     } else if (role == 'admin' && password == 'admin123') {
+//         result = true;
+//         map="../index.html";
+//         name1="admin";
+//     }
+// }
+
+// function salomlashish() {
+//     alert(`Assalamu alaykum ${name1} pagega xush kelibsiz`);
+// }
+// function check() {
+//     auth(role, password);
+//     if (result) {
+//         salomlashish();
+//         window.location.href = map;
+//     } else {
+//         alert("Login yoki parol xato");
+//     }
+// }
+// check();
+
+// const role = prompt("Rolingizni kiriting");
+// const password = prompt("Parolingizni kiriting");
+
+// function autentifikatsiya(role, password) {
+//     const malumotlar = {
+//         user: { parol: "12345", nom: "user", yol: "../user.html" },
+//         admin: { parol: "admin123", nom: "admin", yol: "../index.html" }
+//     };
+
+//     const foydalanuvchi = malumotlar[role];
+//     console.log(foydalanuvchi)
+//     if (foydalanuvchi && foydalanuvchi.parol === password) {
+//         return { togri: true, nom: foydalanuvchi.nom, yol: foydalanuvchi.yol };
+//     }
+//     return { togri: false };
+// }
+
+// function salomlashish(nom) {
+//     alert(`Assalamu alaykum ${nom} sahifasiga xush kelibsiz`);
+// }
+
+// function tekshir() {
+//     const { togri, nom, yol } = autentifikatsiya(role, password);
+//     if (togri) {
+//         salomlashish(nom);
+//         window.location.href = yol;
+//     } else {
+//         alert("Login yoki parol xato");
+//     }
+// }
+
+// tekshir();
+function truu(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (i % 2 === 0) {
+            if (arr[i] > arr[i + 1]) {
+                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]]; // almashish
+            }
+        } else {
+            if (arr[i] < arr[i + 1]) {
+                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]]; // almashish
+            }
+        }
+    }
+    return arr;
+}
+
+const input = [4, 3, 7, 8, 6, 2, 1];
+console.log(truu(input)); // Output: [3, 7, 4, 8, 2, 6, 1]
+
+let='aabbcc';
 
 
 
