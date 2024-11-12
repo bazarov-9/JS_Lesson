@@ -365,3 +365,24 @@
 // console.log(false !== 0);  // true (boolean va number mos emas)
 // console.log(null !== undefined);  // true (turli xil qiymatlar)
 // console.log(5 !== 5);  // false (bir xil qiymat va tur)
+
+
+let age = '18';  // Stringda saqlangan
+
+if (age == 18) {
+  console.log("Yosh mos keldi.");  // true (string '18' son 18 ga aylantirildi)
+}
+
+if (age === 18) {
+  console.log("Yosh to'g'ri keldi.");  // Bu ishlamaydi, chunki string va number mos emas.
+}
+//----------------------------------------
+let isLoggedIn = 1;  // 1: foydalanuvchi tizimga kirgan
+
+if (isLoggedIn == true) {
+  console.log("Foydalanuvchi tizimda.");
+}
+
+if (isLoggedIn === true) {
+  console.log("Bu qism ishlamaydi.");  // false, chunki 1 va true turli tiplar.
+}
