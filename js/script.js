@@ -367,22 +367,37 @@
 // console.log(5 !== 5);  // false (bir xil qiymat va tur)
 
 
-let age = '18';  // Stringda saqlangan
+// let age = '18';  // Stringda saqlangan
 
-if (age == 18) {
-  console.log("Yosh mos keldi.");  // true (string '18' son 18 ga aylantirildi)
-}
+// if (age == 18) {
+//   console.log("Yosh mos keldi.");  // true (string '18' son 18 ga aylantirildi)
+// }
 
-if (age === 18) {
-  console.log("Yosh to'g'ri keldi.");  // Bu ishlamaydi, chunki string va number mos emas.
-}
-//----------------------------------------
-let isLoggedIn = 1;  // 1: foydalanuvchi tizimga kirgan
+// if (age === 18) {
+//   console.log("Yosh to'g'ri keldi.");  // Bu ishlamaydi, chunki string va number mos emas.
+// }
+// //----------------------------------------
+// let isLoggedIn = 1;  // 1: foydalanuvchi tizimga kirgan
 
-if (isLoggedIn == true) {
-  console.log("Foydalanuvchi tizimda.");
-}
+// if (isLoggedIn == true) {
+//   console.log("Foydalanuvchi tizimda.");
+// }
 
-if (isLoggedIn === true) {
-  console.log("Bu qism ishlamaydi.");  // false, chunki 1 va true turli tiplar.
-}
+// if (isLoggedIn === true) {
+//   console.log("Bu qism ishlamaydi.");  // false, chunki 1 va true turli tiplar.
+// }
+
+
+// console.log(true && true);   
+// console.log(true && false);  
+// console.log(5 > 3 && 10 > 2);
+// console.log(5 > 10 && 10 > 2); 
+
+// console.log(true || false);  
+// console.log(false || false); 
+// console.log(5 > 3 || 10 < 2);
+// console.log(5 < 3 || 10 < 2);
+
+// console.log(false || (true && false));  //true
+// console.log((false || true) && false); //
+// console.log(!(false && true) || true);
