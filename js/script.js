@@ -297,89 +297,71 @@
 
 // console.log(1**"a");
 // console.log(undefined+[1,2,3]);
-// x=15;
-// const role = prompt("Enter your role");
-// const password = prompt("Enter your password");
-// let result = false;
-// let name1;
-// function auth(role, password) {
-//     let map;
-//     if (role == 'user' && password == '12345') {
-//         result = true;
-//         map="../user.html";
-//         name1="user";
-//     } else if (role == 'admin' && password == 'admin123') {
-//         result = true;
-//         map="../index.html";
-//         name1="admin";
-//     }
+// x=15
+
+
+//truthy qiymatlar true,1,{},[]," ",infinity,-infinity,
+//falsy qiymatlar false,0,null,undefined,NaN ,""
+// if(" "){
+//     console.log('empty string');
+// }else{
+//     console.log('not empty string');
 // }
 
-// function salomlashish() {
-//     alert(`Assalamu alaykum ${name1} pagega xush kelibsiz`);
-// }
-// function check() {
-//     auth(role, password);
-//     if (result) {
-//         salomlashish();
-//         window.location.href = map;
-//     } else {
-//         alert("Login yoki parol xato");
-//     }
-// }
-// check();
-
-// const role = prompt("Rolingizni kiriting");
-// const password = prompt("Parolingizni kiriting");
-
-// function autentifikatsiya(role, password) {
-//     const malumotlar = {
-//         user: { parol: "12345", nom: "user", yol: "../user.html" },
-//         admin: { parol: "admin123", nom: "admin", yol: "../index.html" }
-//     };
-
-//     const foydalanuvchi = malumotlar[role];
-//     console.log(foydalanuvchi)
-//     if (foydalanuvchi && foydalanuvchi.parol === password) {
-//         return { togri: true, nom: foydalanuvchi.nom, yol: foydalanuvchi.yol };
-//     }
-//     return { togri: false };
+// const money=0;
+// if (money) {
+//   console.log("Pul bor"); 
+// }else{
+//   console.log("Pul yo'q");
 // }
 
-// function salomlashish(nom) {
-//     alert(`Assalamu alaykum ${nom} sahifasiga xush kelibsiz`);
+// const money1="";
+// if (money1) {
+//   console.log("Zo'r"); 
+// }else{
+//   console.log("Xato");
 // }
 
-// function tekshir() {
-//     const { togri, nom, yol } = autentifikatsiya(role, password);
-//     if (togri) {
-//         salomlashish(nom);
-//         window.location.href = yol;
-//     } else {
-//         alert("Login yoki parol xato");
-//     }
+// let value = infinity;
+// if (value) {
+//   console.log("null qiymati true bo'ladi");
+// }else {
+//   console.log("null qiymati false bo'ladi"); 
 // }
 
-// tekshir();
-function truu(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
-        if (i % 2 === 0) {
-            if (arr[i] > arr[i + 1]) {
-                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]]; // almashish
-            }
-        } else {
-            if (arr[i] < arr[i + 1]) {
-                [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]]; // almashish
-            }
-        }
-    }
-    return arr;
-}
 
-const input = [4, 3, 7, 8, 6, 2, 1];
-console.log(truu(input)); // Output: [3, 7, 4, 8, 2, 6, 1]
+// let name1 = "asdadasdasd";
+// let userName = (name1 || "Foydalanuvchi"||12); 
+// console.log(userName); 
 
-let='aabbcc';
+// let isLoggedIn = true;
+// if (isLoggedIn && "Xush kelibsiz!") {
+//   console.log("Xush kelibsiz!");  
+// }
+
+// console.log(5 == '5');   // true  (string '5' son 5 ga o'zgartirildi)
+// console.log(true == 1);   // true  (true => 1)
+// console.log(false == 0);  // true  (false => 0)
+// console.log(null == undefined);  // true (ikkalasi ham 'bo'sh' qiymat)
+// console.log('' == 0);     // true (bo'sh string 0 ga o'zgartirildi)
+// console.log(typeof (5==5));
 
 
+// console.log(5 === '5');  // false (string va number mos emas)
+// console.log(true === 1);  // false (boolean va number mos emas)
+// console.log(false === 0);  // false (boolean va number mos emas)
+// console.log(null === undefined);  // false (turli xil qiymatlar)
+// console.log('' === 0);  // false (string va number mos emas)
+// console.log(5 === 5);  // true (bir xil qiymat va tur)
 
+// console.log(8 != '8');   // false (string '5' son 5 ga o'zgartirildi)
+// console.log(true != 1);   // false (true => 1)
+// console.log(false != 0);  // false (false => 0)
+// console.log(null != undefined);  // false (ikkalasi ham 'bo'sh' qiymat)
+// console.log('' != 0);     // false (bo'sh string 0 ga o'zgartirildi)
+
+// console.log(5 !== '5');  // true (string va number mos emas)
+// console.log(true !== 1);  // true (boolean va number mos emas)
+// console.log(false !== 0);  // true (boolean va number mos emas)
+// console.log(null !== undefined);  // true (turli xil qiymatlar)
+// console.log(5 !== 5);  // false (bir xil qiymat va tur)
