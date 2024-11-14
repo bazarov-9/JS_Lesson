@@ -401,3 +401,68 @@
 // console.log(false || (true && false));  //true
 // console.log((false || true) && false); //
 // console.log(!(false && true) || true);
+
+
+// let data=true;
+// console.log(typeof `${data}`);
+
+// let data="";
+// console.log( typeof 5/"5");
+// console.log(typeof data);
+// if(NaN){
+//     console.log("true");
+// }
+// if(1n*2){
+//     console.log("true");
+// }
+
+// console.log(!!!true ||!!((5 > 3 && 10 > 2)*5/"5") && undefined);
+// console.log(!NaN);
+
+
+// const sym1 = Symbol("id");
+// const sym2 = Symbol("id");
+// console.log(sym1 === sym2);
+// const day=prompt("Bugun 1 dan 7 gacha bulgan son kiriting men sizga songa mos bulgan hafta nomini chiqarib beraman");
+// const result=parseFloat(day)
+// switch(result){
+//     case 1:
+//         alert("Dushanba");
+//         break;
+//     case 2:
+//         alert("Seshanba");
+//         break;
+//     case 3:
+//         alert("chorshanba");
+//         break;
+//     case 4:
+//         alert("Payshanba");
+//         break;
+//     case 5:
+//         alert("Juma");
+//         break;
+//     case 6:
+//         alert("shanba");
+//         break;
+//     case 7:
+//         alert("yakshanba");
+//         break;
+//     default:
+//         alert("Siz kiritgan son 1 dan 7 gacha emas");
+// }
+
+let fruit = true;
+
+switch (fruit) {
+    case true:
+        console.log("Bu olma.");
+        break;
+    case "banan":
+        console.log("Bu banan.");
+        break;
+    case "anor":
+        console.log("Bu anor.");
+        break;
+    default:
+        console.log("Meva topilmadi.");
+}
