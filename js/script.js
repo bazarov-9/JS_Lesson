@@ -5,6 +5,8 @@
 // console.log(firstName , lastName, check , confirmation);
 // console.log("Hello World"); 
 
+const { Logger } = require("sass");
+
 // let name="Sardorbek";
 
 // console.log(name);
@@ -466,3 +468,4 @@
 //     default:
 //         console.log("Meva topilmadi.");
 // }
+
