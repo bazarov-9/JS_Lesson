@@ -451,18 +451,18 @@
 //         alert("Siz kiritgan son 1 dan 7 gacha emas");
 // }
 
-let fruit = true;
+// let fruit = true;
 
-switch (fruit) {
-    case true:
-        console.log("Bu olma.");
-        break;
-    case "banan":
-        console.log("Bu banan.");
-        break;
-    case "anor":
-        console.log("Bu anor.");
-        break;
-    default:
-        console.log("Meva topilmadi.");
-}
+// switch (fruit) {
+//     case true:
+//         console.log("Bu olma.");
+//         break;
+//     case "banan":
+//         console.log("Bu banan.");
+//         break;
+//     case "anor":
+//         console.log("Bu anor.");
+//         break;
+//     default:
+//         console.log("Meva topilmadi.");
+// }
