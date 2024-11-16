@@ -5,7 +5,6 @@
 // console.log(firstName , lastName, check , confirmation);
 // console.log("Hello World"); 
 
-const { Logger } = require("sass");
 
 // let name="Sardorbek";
 
@@ -469,6 +468,205 @@ const { Logger } = require("sass");
 //         console.log("Meva topilmadi.");
 // }
 
+// function hello() {
+//     console.log("Hello");
+// }
+// hello();
+// hello();
+// hello();
+
+// function showMessage() {
+//     let message = "Hello, I'm JavaScript!"; 
+//     alert(message);
+// }
+
+// showMessage();
+
+// let userName = 'John';
+
+// function showMessage() {
+//   let message = 'Hello, ' + userName;
+//   console.log(message);
+
+// }
+
+// showMessage(); 
 
 
+// let userName = 'John';
 
+// function showMessage() {
+//     userName = "Bob";
+//     let message = 'Hello, ' + userName;
+//     console.log(message);
+// }
+
+// showMessage();
+// alert(userName);
+
+
+// alert(userName); 
+
+// const myFunction = function () {
+//     console.log("Bu Function Expression");
+// };
+// myFunction();
+
+// const greet = function (name) {
+//     console.log("Salom, " + name + "!");
+// };
+
+// greet("Sardorbek");
+// const calcules=function (a,b,c) {
+//     let result=a+b+c;
+//     console.log(result);
+// }
+// calcules(1,2,5);
+// calcules(3,4,5);
+
+// const max=function (a,b) {
+//     if(a>b){
+//         console.log(`Ikki sondan kattasi ${a}`);
+//     }else{
+//         console.log(`Ikki sondan kattasi ${b}`);
+//     }
+// }
+// max(12,6);
+
+
+// sayHello();
+
+// function sayHello() {
+//     console.log("Hello, world!");
+// }
+
+// const sayHello=function () {
+//     console.log("Hello, world!");
+// }
+
+// Anonim
+// const myFunction = function () {
+//     console.log("Bu anonim funksiya!");
+// };
+
+// const myNamedFunction = function example() {
+//     console.log("Bu nomlangan funksiya!");
+// };
+// myNamedFunction();
+
+// function showMessage(from, text) { 
+//     alert(from + ': ' + text);
+//   }
+
+//   showMessage('Ann', 'Hello!'); 
+//   showMessage('Ann', "What's up?"); 
+
+
+// function showMessage(from, text) {
+//     from = '*' + from + '*';
+
+//     alert(from + ': ' + text);
+// }
+
+// let from = "Ann";
+
+// showMessage(from, "Hello"); 
+// alert(from);
+
+
+// const myFunction =()=>{
+//     console.log("Bu arrow funksiya");
+// }
+// myFunction();
+
+// const greet = name => {
+//     console.log("Salom, " + name + "!");
+// };
+
+// greet("Sardorbek");
+
+// const add = (a, b) => a + b;
+// console.log(add(2, 3));
+
+// Oddiy Function Expression
+// const sayHello = function () {
+//     return "Hello!";
+// };
+
+// // Arrow Function
+// const sayHelloArrow = () => "Hello!";
+
+// function sayHello(name) {
+//     return "Salom, " + name + "!";
+// }
+
+// function greetUser() {
+//     const message = sayHello("Sardorbek");
+//     console.log(message);
+// }
+
+// greetUser();
+// function multiply(a, b) {
+//     return a * b;
+// }
+// function bulish(a, b) {
+//     return a / b;
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+// function max(a, b) {
+//     if (a > b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// function calculate(a, b) {
+//     const product = multiply(a, b);
+//     const sum = add(a, b);
+//     const result = bulish(a, b);
+//     const result2 = max(a, b);
+//     return `Yig'indisi: ${sum}, Ko'paytmasi: ${product} , Bo'lishi: ${result}, kattasi: ${result2}`;
+// }
+// const calculate= function(a,b){
+//     const product=function(a,b){a/b};
+//     const multiply=(a,b)=>a*b;
+//     const add=(a,b)=>a+b;
+//     const max=(a,b)=>a>b?a:b;
+//     console.log(`Yig'indisi: ${add}, Ko'paytmasi: ${multiply} , Bo'lishi: ${product}, kattasi: ${max}`);
+// }
+
+// calculate(5, 3)
+
+
+const role=prompt('Rolingizni kiriting');
+const password=prompt('Parolingizni kiriting');
+let map;
+const login=(role,password)=>{
+    if(role=='admin' && password=='admin123'){
+        map="../admin.html";
+        return true
+    }else if(role=='user' && password=='user123'){
+        map="../user.html";
+        return true  
+    }else{    
+        return false
+    }
+}
+const sayHello=()=>{
+    alert('Xush kelibsiz')
+}
+
+const auth=(role,password)=>{
+    if(login(role,password)){
+        sayHello()
+        window.location.href=map
+    }else{
+        alert('Login yoki parol noto`g`ri')
+    }
+}
+
+auth(role,password)
