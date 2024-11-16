@@ -670,10 +670,3 @@
 // }
 
 // auth(role,password)
-
-const sentence = "I love JavaScript.";
-
-// "JavaScript" so'zini "React" bilan almashtiramiz
-const newSentence = sentence.replace("JavaScript", "React");
-
-console.log(newSentence); // "I love React."
