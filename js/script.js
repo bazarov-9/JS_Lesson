@@ -642,31 +642,31 @@
 // calculate(5, 3)
 
 
-const role=prompt('Rolingizni kiriting');
-const password=prompt('Parolingizni kiriting');
-let map;
-const login=(role,password)=>{
-    if(role=='admin' && password=='admin123'){
-        map="../admin.html";
-        return true
-    }else if(role=='user' && password=='user123'){
-        map="../user.html";
-        return true  
-    }else{    
-        return false
-    }
-}
-const sayHello=()=>{
-    alert('Xush kelibsiz')
-}
+// const role=prompt('Rolingizni kiriting');
+// const password=prompt('Parolingizni kiriting');
+// let map;
+// const login=(role,password)=>{
+//     if(role=='admin' && password=='admin123'){
+//         map="../admin.html";
+//         return true
+//     }else if(role=='user' && password=='user123'){
+//         map="../user.html";
+//         return true  
+//     }else{    
+//         return false
+//     }
+// }
+// const sayHello=()=>{
+//     alert('Xush kelibsiz')
+// }
 
-const auth=(role,password)=>{
-    if(login(role,password)){
-        sayHello()
-        window.location.href=map
-    }else{
-        alert('Login yoki parol noto`g`ri')
-    }
-}
+// const auth=(role,password)=>{
+//     if(login(role,password)){
+//         sayHello()
+//         window.location.href=map
+//     }else{
+//         alert('Login yoki parol noto`g`ri')
+//     }
+// }
 
-auth(role,password)
+// auth(role,password)
