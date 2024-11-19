@@ -5,6 +5,7 @@
 // console.log(firstName , lastName, check , confirmation);
 // console.log("Hello World"); 
 
+
 // let name="Sardorbek";
 
 // console.log(name);
@@ -377,7 +378,13 @@
 //   console.log("Yosh to'g'ri keldi.");  // Bu ishlamaydi, chunki string va number mos emas.
 // }
 // //----------------------------------------
-// let isLoggedIn = 1;  // 1: foydalanuvchi tizimga kirgan
+// let isLoggedIn = 1;  // 1: foydalanuvchi tizimga kirgani uchun
+
+// yoki DATA 2
+// let scoreDolphins = calcAverage(85, 54, 41);
+// let scoreKoalas = calcAverage(23, 34, 27);
+
+// 3. g'olibni aniqlash funksiyasi
 
 // if (isLoggedIn == true) {
 //   console.log("Foydalanuvchi tizimda.");
@@ -387,28 +394,311 @@
 //   console.log("Bu qism ishlamaydi.");  // false, chunki 1 va true turli tiplar.
 // }
 
-// 1. o'rtacha qiymatni hisoblaydigan arrow function
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
-// 2. jamoalar uchun ballar
-// DATA 1
-let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
+// console.log(true && true);   
+// console.log(true && false);  
+// console.log(5 > 3 && 10 > 2);
+// console.log(5 > 10 && 10 > 2); 
 
-// yoki DATA 2
-// let scoreDolphins = calcAverage(85, 54, 41);
-// let scoreKoalas = calcAverage(23, 34, 27);
+// console.log(true || false);  
+// console.log(false || false); 
+// console.log(5 > 3 || 10 < 2);
+// console.log(5 < 3 || 10 < 2);
 
-// 3. g'olibni aniqlash funksiyasi
-const checkWinner = (avgDolphins, avgKoalas) => {
-  if (avgDolphins >= 2 * avgKoalas) {
-    console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
-  } else if (avgKoalas >= 2 * avgDolphins) {
-    console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
-  } else {
-    console.log('No team wins...');
-  }
-};
+// console.log(false || (true && false));  //true
+// console.log((false || true) && false); //
+// console.log(!(false && true) || true);
+
+
+// let data=true;
+// console.log(typeof `${data}`);
+
+// let data="";
+// console.log( typeof 5/"5");
+// console.log(typeof data);
+// if(NaN){
+//     console.log("true");
+// }
+// if(1n*2){
+//     console.log("true");
+// }
+
+// console.log(!!!true ||!!((5 > 3 && 10 > 2)*5/"5") && undefined);
+// console.log(!NaN);
+
+
+// const sym1 = Symbol("id");
+// const sym2 = Symbol("id");
+// console.log(sym1 === sym2);
+// const day=prompt("Bugun 1 dan 7 gacha bulgan son kiriting men sizga songa mos bulgan hafta nomini chiqarib beraman");
+// const result=parseFloat(day)
+// switch(result){
+//     case 1:
+//         alert("Dushanba");
+//         break;
+//     case 2:
+//         alert("Seshanba");
+//         break;
+//     case 3:
+//         alert("chorshanba");
+//         break;
+//     case 4:
+//         alert("Payshanba");
+//         break;
+//     case 5:
+//         alert("Juma");
+//         break;
+//     case 6:
+//         alert("shanba");
+//         break;
+//     case 7:
+//         alert("yakshanba");
+//         break;
+//     default:
+//         alert("Siz kiritgan son 1 dan 7 gacha emas");
+// }
+
+// let fruit = true;
+
+// switch (fruit) {
+//     case true:
+//         console.log("Bu olma.");
+//         break;
+//     case "banan":
+//         console.log("Bu banan.");
+//         break;
+//     case "anor":
+//         console.log("Bu anor.");
+//         break;
+//     default:
+//         console.log("Meva topilmadi.");
+// }
+
+// function hello() {
+//     console.log("Hello");
+// }
+// hello();
+// hello();
+// hello();
+
+// function showMessage() {
+//     let message = "Hello, I'm JavaScript!"; 
+//     alert(message);
+// }
+
+// showMessage();
+
+// let userName = 'John';
+
+// function showMessage() {
+//   let message = 'Hello, ' + userName;
+//   console.log(message);
+
+// }
+
+// showMessage(); 
+
+
+// let userName = 'John';
+
+// function showMessage() {
+//     userName = "Bob";
+//     let message = 'Hello, ' + userName;
+//     console.log(message);
+// }
+
+// showMessage();
+// alert(userName);
+
+
+// alert(userName); 
+
+// const myFunction = function () {
+//     console.log("Bu Function Expression");
+// };
+// myFunction();
+
+// const greet = function (name) {
+//     console.log("Salom, " + name + "!");
+// };
+
+// greet("Sardorbek");
+// const calcules=function (a,b,c) {
+//     let result=a+b+c;
+//     console.log(result);
+// }
+// calcules(1,2,5);
+// calcules(3,4,5);
+
+// const max=function (a,b) {
+//     if(a>b){
+//         console.log(`Ikki sondan kattasi ${a}`);
+//     }else{
+//         console.log(`Ikki sondan kattasi ${b}`);
+//     }
+// }
+// max(12,6);
+
+
+// sayHello();
+
+// function sayHello() {
+//     console.log("Hello, world!");
+// }
+
+// const sayHello=function () {
+//     console.log("Hello, world!");
+// }
+
+// Anonim
+// const myFunction = function () {
+//     console.log("Bu anonim funksiya!");
+// };
+
+// const myNamedFunction = function example() {
+//     console.log("Bu nomlangan funksiya!");
+// };
+// myNamedFunction();
+
+// function showMessage(from, text) { 
+//     alert(from + ': ' + text);
+//   }
+
+//   showMessage('Ann', 'Hello!'); 
+//   showMessage('Ann', "What's up?"); 
+
+
+// function showMessage(from, text) {
+//     from = '*' + from + '*';
+
+//     alert(from + ': ' + text);
+// }
+
+// let from = "Ann";
+
+// showMessage(from, "Hello"); 
+// alert(from);
+
+
+// const myFunction =()=>{
+//     console.log("Bu arrow funksiya");
+// }
+// myFunction();
+
+// const greet = name => {
+//     console.log("Salom, " + name + "!");
+// };
+
+// greet("Sardorbek");
+
+// const add = (a, b) => a + b;
+// console.log(add(2, 3));
+
+// Oddiy Function Expression
+// const sayHello = function () {
+//     return "Hello!";
+// };
+
+// // Arrow Function
+// const sayHelloArrow = () => "Hello!";
+
+// function sayHello(name) {
+//     return "Salom, " + name + "!";
+// }
+
+// function greetUser() {
+//     const message = sayHello("Sardorbek");
+//     console.log(message);
+// }
+
+// greetUser();
+// function multiply(a, b) {
+//     return a * b;
+// }
+// function bulish(a, b) {
+//     return a / b;
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+// function max(a, b) {
+//     if (a > b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// function calculate(a, b) {
+//     const product = multiply(a, b);
+//     const sum = add(a, b);
+//     const result = bulish(a, b);
+//     const result2 = max(a, b);
+//     return `Yig'indisi: ${sum}, Ko'paytmasi: ${product} , Bo'lishi: ${result}, kattasi: ${result2}`;
+// }
+// const calculate= function(a,b){
+//     const product=function(a,b){a/b};
+//     const multiply=(a,b)=>a*b;
+//     const add=(a,b)=>a+b;
+//     const max=(a,b)=>a>b?a:b;
+//     console.log(`Yig'indisi: ${add}, Ko'paytmasi: ${multiply} , Bo'lishi: ${product}, kattasi: ${max}`);
+// }
+
+// calculate(5, 3)
+
+
+// const role=prompt('Rolingizni kiriting');
+// const password=prompt('Parolingizni kiriting');
+// let map;
+// const login=(role,password)=>{
+//     if(role=='admin' && password=='admin123'){
+//         map="../admin.html";
+//         return true
+//     }else if(role=='user' && password=='user123'){
+//         map="../user.html";
+//         return true  
+//     }else{    
+//         return false
+//     }
+// }
+// const sayHello=()=>{
+//     alert('Xush kelibsiz')
+// }
+
+// const auth=(role,password)=>{
+//     if(login(role,password)){
+//         sayHello()
+//         window.location.href=map
+//     }else{
+//         alert('Login yoki parol noto`g`ri')
+//     }
+// }
+
+// auth(role,password)
+
+
+// 1. O'rtacha ballni hisoblaydigan oddiy function
+function calcAverage(score1, score2, score3) {
+ return (score1 + score2 + score3) / 3;
+}
+
+// 2. Jamoalarning o'rtacha ballarini hisoblash
+const scoreDolphins = calcAverage(44, 23, 71); // Dolphins jamoasi uchun o'rtacha
+const scoreKoalas = calcAverage(65, 54, 49);  // Koalas jamoasi uchun o'rtacha
+
+// 3. G'olibni aniqlovchi funksiya
+function checkWinner(avgDolphins, avgKoalas) {
+ if (avgDolphins >= 2 * avgKoalas) {
+   console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+ } else if (avgKoalas >= 2 * avgDolphins) {
+   console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+ } else {
+   console.log('No team wins...');
+ }
+}
 
 // 4. G'olibni aniqlash
 checkWinner(scoreDolphins, scoreKoalas);
+
+
