@@ -367,22 +367,48 @@
 // console.log(5 !== 5);  // false (bir xil qiymat va tur)
 
 
-let age = '18';  // Stringda saqlangan
+// let age = '18';  // Stringda saqlangan
 
-if (age == 18) {
-  console.log("Yosh mos keldi.");  // true (string '18' son 18 ga aylantirildi)
-}
+// if (age == 18) {
+//   console.log("Yosh mos keldi.");  // true (string '18' son 18 ga aylantirildi)
+// }
 
-if (age === 18) {
-  console.log("Yosh to'g'ri keldi.");  // Bu ishlamaydi, chunki string va number mos emas.
-}
-//----------------------------------------
-let isLoggedIn = 1;  // 1: foydalanuvchi tizimga kirgan
+// if (age === 18) {
+//   console.log("Yosh to'g'ri keldi.");  // Bu ishlamaydi, chunki string va number mos emas.
+// }
+// //----------------------------------------
+// let isLoggedIn = 1;  // 1: foydalanuvchi tizimga kirgan
 
-if (isLoggedIn == true) {
-  console.log("Foydalanuvchi tizimda.");
-}
+// if (isLoggedIn == true) {
+//   console.log("Foydalanuvchi tizimda.");
+// }
 
-if (isLoggedIn === true) {
-  console.log("Bu qism ishlamaydi.");  // false, chunki 1 va true turli tiplar.
-}
+// if (isLoggedIn === true) {
+//   console.log("Bu qism ishlamaydi.");  // false, chunki 1 va true turli tiplar.
+// }
+
+// 1. o'rtacha qiymatni hisoblaydigan arrow function
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+// 2. jamoalar uchun ballar
+// DATA 1
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+
+// yoki DATA 2
+// let scoreDolphins = calcAverage(85, 54, 41);
+// let scoreKoalas = calcAverage(23, 34, 27);
+
+// 3. g'olibni aniqlash funksiyasi
+const checkWinner = (avgDolphins, avgKoalas) => {
+  if (avgDolphins >= 2 * avgKoalas) {
+    console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+  } else if (avgKoalas >= 2 * avgDolphins) {
+    console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+  } else {
+    console.log('No team wins...');
+  }
+};
+
+// 4. G'olibni aniqlash
+checkWinner(scoreDolphins, scoreKoalas);
