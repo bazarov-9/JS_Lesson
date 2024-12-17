@@ -47,7 +47,7 @@
 // console.log(15%4);
 
 // console.log(5 == '5'); //true
-// console.log("5" === '15');//false
+// console.log("5" === '15');//fals
 // console.log(5 != '5'); //false
 // console.log(5 !== '5');//true
 // console.log(5 > 3); 
